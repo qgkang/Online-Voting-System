@@ -1,7 +1,15 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Qingge
- * Date: 2017/3/27
- * Time: 14:10
- */
+<style type="text/css">
+    <!--
+    .STYLE1 {color: #FFFFFF}
+    -->
+</style>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="1000" height="77" background="images/1-1_11.gif">
+            <div align="center">
+                <span class="hui STYLE1">Copyright(C)2009 phpve.com AllRights Reserved <br />QQ：845129549&nbsp;&nbsp; 邮箱：phpve.com@gmail.com
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
