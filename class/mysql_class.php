@@ -17,7 +17,7 @@ class mysql{
 
     //数据库链接
     function connect(){
-        $this->conn = mysql_connect($this->host,$this->root,$this->pwd);
+        $this->conn = @mysql_connect($this->host,$this->root,$this->pwd);
         mysql_select_db($this->database,$this->conn);
         mysql_query("set names utf8");
     }
@@ -27,7 +27,7 @@ class mysql{
     }
 
     function arr_ay($result){
-        return mysql_fetch_array($result);
+        return @mysql_fetch_array($result);
     }
 
     function rows($result){
