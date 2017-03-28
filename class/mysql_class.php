@@ -1,4 +1,5 @@
 <?php
+//对数据库的连接和操作方法进行封装
 class mysql{
     private $host; //服务器地址
     private $root;  //用户名
@@ -44,7 +45,7 @@ class mysql{
 
     //添加
     function insert($biaoming,$ziduan,$zhi){
-        $this->query("INSERT INTO `db-vote`.`$biaoming`($ziduan) VALUES($zhi) ");
+        $this->query("INSERT INTO `db_vote`.`$biaoming`($ziduan) VALUES($zhi) ");
     }
 
     //删除
@@ -54,7 +55,7 @@ class mysql{
 
     //修改
     function update($title,$ziduan,$where){
-        $this->query("UPDATE `tb_vote`.`$title` SET $ziduan WHERE `$title`.`id` =".$where);
+        $this->query("UPDATE `db_vote`.`$title` SET $ziduan WHERE `$title`.`id` =".$where);
     }
 
     function up_date($title,$ziduan,$where){
