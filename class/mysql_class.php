@@ -32,7 +32,7 @@ class mysql{
     }
 
     function rows($result){
-        return mysql_num_rows($result);
+        return @mysql_num_rows($result);
     }
 
     function db_close(){
@@ -40,7 +40,7 @@ class mysql{
     }
     //查询
     function select($biao,$where){
-        return $this->query("SELECT * FROM `$biao` WHERE `$where`");
+        return $this->query("SELECT * FROM `$biao` $where");
     }
 
     //添加
