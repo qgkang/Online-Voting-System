@@ -45,7 +45,7 @@ class mysql{
 
     //添加
     function insert($biaoming,$ziduan,$zhi){
-        $this->query("INSERT INTO `db_vote`.`$biaoming`($ziduan) VALUES($zhi) ");
+        $this->query("INSERT INTO $biaoming ($ziduan) VALUES ($zhi)");
     }
 
     //删除
